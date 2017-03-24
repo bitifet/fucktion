@@ -1,0 +1,16 @@
+{
+  "name": "fucktion",
+  "version": "0.0.1",
+  "description": "Allow to operate promise and non-promise values directly.",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "deasync": "^0.1.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joan Miquel Torres <joanmi@bitifet.net>",
+  "license": "GPL-3.0"
+}
