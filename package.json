@@ -1,6 +1,6 @@
 {
   "name": "fucktion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Allow to operate promise and non-promise values directly.",
   "main": "index.js",
   "dependencies": {
@@ -11,6 +11,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitifet/fucktion.git"
+  },
+  "keywords": [
+    "fucktion",
+    "promise",
+    "deasync",
+    "function"
+  ],
   "author": "Joan Miquel Torres <joanmi@bitifet.net>",
   "license": "GPL-3.0"
 }
