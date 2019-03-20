@@ -28,17 +28,17 @@ fucktion.callback = func => {
   return (...args) => {
     /** @type fucktionCallback */
     const callback = args.pop();
-    promisifiedFunction(args)
+    promisifiedFunction(...args)
       .then(result => callback(null, result))
       .catch(err => callback(err));
   };
 };
 
 /**
- * Wraps `fucktion.promise` with `deasync` allowing you to pass
+ * Wraps `fucktion.callback` with `deasync` allowing you to pass
  * promises to your function but still use it synchronously.
  * @param {function} func
  */
-fucktion.sync = func => deasync(fucktion.promise(func));
+fucktion.sync = func => deasync(fucktion.callback(func));
 
 module.exports = fucktion;
