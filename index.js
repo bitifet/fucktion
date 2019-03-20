@@ -24,7 +24,7 @@ fucktion.promise = func => {
  * @param {function} func
  */
 fucktion.callback = func => {
-  const promisifiedFunction = fucktion.promise(fn);
+  const promisifiedFunction = fucktion.promise(func);
   return (...args) => {
     /** @type fucktionCallback */
     const callback = args.pop();
